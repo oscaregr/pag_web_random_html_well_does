@@ -6,12 +6,21 @@
     <meta name="description" content="una pagina we bien hecha">
     <link rel="stylesheet" href="">
     <link rel="shortcut icon" href="">
+    <!--the open graph protocol
+    :shring debuger-->
     <title>Random Web</title>
 </head>
 <body style="background-color: black; color:white;">
     <header></header>
-    <article>
-        <section></section>
+    <article itemscope itemtype=""> <!--en tipe sacarlo de schema.org
+                                    para que el buscador sepa de que trata tu pagina
+                                    google: herramienta de prueba de datos estructurados-->
+        <section>
+            <footer>
+                <p itemprop="ejemplo">el ejemplo es este</p><!--le dise al buscador
+                                                    que hay hay un ejemplo, es conforme a schema.org-->
+            </footer>
+        </section>
         <section>
             <figure>
                 <pre>
