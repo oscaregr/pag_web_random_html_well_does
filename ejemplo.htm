@@ -35,9 +35,67 @@
                 </figcaption>
             </figure>
         </section>
-        <section></section>
+        <section>
+            <table>
+                <caption>titulo de la tabla</caption>
+                <colgroup>
+                    <col><!-- representa una columna de la tabla-->
+                    <col>
+                    <col>
+                </colgroup>
+                <thead>
+                    <tr>
+                        <th>
+                            nombre columna
+                        </th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>
+                            dato de fila
+                        </td>
+                    </tr>
+                </tbody>
+                <tfoot>
+                    <tr>
+                        <td>
+                            se usa como por ejemplo el resultado de una suma
+                            de toda la columna
+                        </td>
+                    </tr>
+                </tfoot>
+            </table>
+        </section>
     </article>
     <main>
+        <form action="">
+            <fieldset><!--agrupa datos-->
+                <legend>
+                    dar el nombre a la agrupacion
+                </legend>
+                <label for="">
+                    los datos a meter
+                    <input type="text">
+                </label>
+            </fieldset>
+            <fieldset>
+                <legend>select and options</legend>
+                <select name="opcion" multiple><!--multiple persmite seleccionar mas al precionar
+                                                control-->
+                    <optgroup label="numeros">
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                    </optgroup>
+                    <optgroup label="letras">
+                        <option value="a">a</option>
+                        <option value="b">b</option>
+                    </optgroup>
+                    <textarea name="mensaje" id="" cols="30" rows="10"></textarea>
+                </select>
+            </fieldset>
+            <input type="submit" value="enviar/guardar">
+        </form>
         <p>
             <small></small>
             <strong></strong>
