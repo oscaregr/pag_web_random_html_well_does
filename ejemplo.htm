@@ -11,7 +11,28 @@
     <title>Random Web</title>
 </head>
 <body style="background-color: black; color:white;">
-    <header></header>
+    <header>
+        <h1>contenido interactivo</h1>
+        <p>w3c documentacion actualizada de web,html
+
+        </p>
+        <p>creadores de html5 whatwg documentacion mas reciente</p>
+        <p>can i use, ver el soporte de las nuevas implementaciones en el navegador</p>
+        <p>mmdn muestra tambien las documentaciojnes de web</p>
+        <details>
+            <summary>el titula sumario</summary>
+            <p>contenido que aparecera en la parte inferior despues
+                de dar click
+            </p>
+        </details>
+        <dialog open> <!--es como un model,el atriburo open permite mostralos,quitar ocultarlo-->
+            <h2>curso html5 desde cero</h2>
+        </dialog>
+        <h2>enbebidos</h2>
+        <iframe src="" frameborder="0">
+            uno de comentarios en la apagina disqus
+        </iframe>
+    </header>
     <article itemscope itemtype=""> <!--en tipe sacarlo de schema.org
                                     para que el buscador sepa de que trata tu pagina
                                     google: herramienta de prueba de datos estructurados-->
@@ -145,13 +166,23 @@
         </ol>
         <p>pasos a la luna, lista de defiinicion</p>
         <dl>
-            <td>nave</td>
-            <dd>tanque lleno</dd>
+        <td>nave</td>
+        <dd>tanque lleno</dd>
             <td>oxigeno</td>
             <dd>tanques para ponerlo</dd>
         </dl>
     </nav>
-    <aside></aside><!-- quieres poner pero no esta relacionado-->
+    <aside><!--poster poner imagen antes del video, controls avilitar la reproduccion del video
+        y no solo cargar el primer frame-->
+        <video src="" controls autoplay poster="">
+            
+        </video>
+        <button id = "play">play</button>
+        <button id = "pausa">Pausa</button><!--desde js se puede controlar,
+            crear tu reproductor videojs, flowplayer-->
+        <audio src="" controls></audio>
+
+    </aside><!-- quieres poner pero no esta relacionado-->
     <footer>
         
     </footer>
