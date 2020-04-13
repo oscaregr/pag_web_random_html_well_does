@@ -1,0 +1,86 @@
+body{
+    margin: 0px;
+}
+header{
+    
+    padding: 0px;
+    width: 100%;
+    margin:0px;
+    display: flex;
+    justify-content: space-between;
+    position: absolute;
+}
+
+.logo>img{
+    width: 100px;
+    height: 75px;
+    opacity: 30%;
+    background-color: orchid;
+}
+
+.opacity_menu{
+    width: 30px;
+    opacity: 30%;
+    background-color: orchid;
+    float: left;
+}
+
+.menu{
+    text-align: center;
+}
+
+.menu  li{
+    animation: none;
+    list-style: none;
+    padding: 0;
+    position: relative;
+}
+
+.menu a{
+    padding: 10px;
+    transition: 0.4s;
+    display: block;
+    
+}
+
+.menu a:hover{
+    background-color: blueviolet;
+    background: rgba(0, 0, 0, .2);
+}
+
+a{
+    text-decoration: none;
+    color:white;
+}
+
+
+@media screen and (min-width: 768px){
+
+.menu > ul{
+    margin: 1px;
+    display: flex;
+}
+
+.menu > ul >li:hover ul{
+    display: block;
+   
+    background-color: indianred;
+    position: absolute;
+}
+.menu>ul>li>ul{
+    padding: 0;
+    display: flex;
+    justify-content: start;
+    align-content: flex-start;
+    align-items: flex-start;
+    flex-direction: column;
+    position: absolute;
+    opacity: 100%;
+    display: none;
+}
+.menu>ul>li>ul>li{
+    
+    padding: 2px;
+}
+
+}
